@@ -7,6 +7,8 @@ name = "pypi"
 ipython = "*"
 sqlalchemy = "*"
 jupyter = "*"
+"psycopg2-binary" = "*"
+networkx = "*"
 
 [dev-packages]
 
