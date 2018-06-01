@@ -22,5 +22,6 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 Text = Base.classes.text
-
 Citation = Base.classes.citation
+Field = Base.classes.field
+Subfield = Base.classes.subfield
