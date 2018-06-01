@@ -9,6 +9,7 @@ sqlalchemy = "*"
 jupyter = "*"
 "psycopg2-binary" = "*"
 networkx = "*"
+tqdm = "*"
 
 [dev-packages]
 
