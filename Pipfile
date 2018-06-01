@@ -10,6 +10,7 @@ jupyter = "*"
 "psycopg2-binary" = "*"
 networkx = "*"
 tqdm = "*"
+pandas = "*"
 
 [dev-packages]
 

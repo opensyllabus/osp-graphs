@@ -25,3 +25,5 @@ Text = Base.classes.text
 Citation = Base.classes.citation
 Field = Base.classes.field
 Subfield = Base.classes.subfield
+SubfieldDocument = Base.classes.subfield_document
+Document = Base.classes.document
