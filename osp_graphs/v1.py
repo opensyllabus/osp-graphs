@@ -7,26 +7,36 @@ from tqdm import tqdm
 from itertools import combinations
 from collections import Counter
 
-from v1_db import session, Text, Citation
+from .v1_db import session, Text, Citation
 
 
 class Graph(nx.Graph):
 
-    def add_osp_edges(self):
-        """Register edges from `citation`.
+    @classmethod
+    def from_text_ids(cls, text_ids):
+        """Build graph from set of text ids.
         """
-        doc_text_ids = (session
+        graph = cls()
+
+        doc_texts = (session
             .query(array_agg(Citation.text_id))
             .join(Text, Citation.text_id==Text.id)
             .filter(Text.valid==True)
             .filter(Text.display==True)
-            .group_by(Citation.document_id)
-            .limit(1000))
+            .filter(Text.id.in_(text_ids))
+            .group_by(Citation.document_id))
 
         edges = Counter()
-        for ids in tqdm(doc_text_ids):
+        for ids in tqdm(doc_texts):
             for tid1, tid2 in combinations(ids[0], 2):
                 edges[tid1, tid2] += 1
 
         for (tid1, tid2), count in edges.items():
-            self.add_edge(tid1, tid2, weight=count)
+            graph.add_edge(tid1, tid2, weight=count)
+
+        texts = session.query(Text).filter(Text.id.in_(text_ids))
+
+        for text in tqdm(texts):
+            graph.add_node(text.id, title=text.title)
+
+        return graph
