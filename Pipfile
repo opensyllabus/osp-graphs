@@ -12,6 +12,8 @@ networkx = "*"
 tqdm = "*"
 pandas = "*"
 matplotlib = "*"
+numpy = "*"
+scipy = "*"
 
 [dev-packages]
 
