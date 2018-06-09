@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "851d19f722c95dd03910002e9d58255b047f64c2fc34226bd1215db8925c27d9"
+            "sha256": "9375bb5a799093dcdc7bbe7807692a0699686d1d9c136591ad1a0ef07ba1178f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "altair": {
+            "hashes": [
+                "sha256:7926e2e1680457d70d52c5157468770f28b6ab6b126ba65fbd3824ebf6422e8b",
+                "sha256:e8b222588dde98ec614e6808357fde7fa321118db44cc909df2bf30158d931c0"
+            ],
+            "index": "pypi",
+            "version": "==2.1.0"
+        },
         "annoy": {
             "hashes": [
                 "sha256:8f2aa56f7971dc1e9e10ee5a846aabe83a13e692e0107e317c101a5674a4ec70"
@@ -153,6 +161,21 @@
                 "sha256:ba70754aa680300306c699790128f6fbd8c306ee5927976cbe48adacf240c0b7"
             ],
             "version": "==4.4.0"
+        },
+        "jupyterlab": {
+            "hashes": [
+                "sha256:6a1af69fe0c0890891b5bb4cb9914edca68ed59b00ed50cd2bc78e230c739b55",
+                "sha256:88290656a2db2e38ef913a257ec283f3b5bd99144ed3d52899c9af7030077554"
+            ],
+            "index": "pypi",
+            "version": "==0.32.1"
+        },
+        "jupyterlab-launcher": {
+            "hashes": [
+                "sha256:c78646afa354856a7ba3d9583122b89603d24587126f4c49a04dd42f50c831ec",
+                "sha256:d6308617fbdb3949c76356e8149c9835b65b01653fdefd983085c61d75f3c810"
+            ],
+            "version": "==0.10.5"
         },
         "kiwisolver": {
             "hashes": [
@@ -550,6 +573,12 @@
             ],
             "version": "==0.3.1"
         },
+        "toolz": {
+            "hashes": [
+                "sha256:929f0a7ea7f61c178bd951bdae93920515d3fbdbafc8e6caf82d752b9b3b31c9"
+            ],
+            "version": "==0.9.0"
+        },
         "tornado": {
             "hashes": [
                 "sha256:1b83d5c10550f2653380b4c77331d6f8850f287c4f67d7ce1e1c639d9222fbc7",
@@ -574,6 +603,14 @@
                 "sha256:c6cb5e6f57c5a9bdaa40fa71ce7b4af30298fbab9ece9815b5d995ab6217c7d9"
             ],
             "version": "==4.3.2"
+        },
+        "typing": {
+            "hashes": [
+                "sha256:3a887b021a77b292e151afb75323dea88a7bc1b3dfa92176cff8e44c8b68bddf",
+                "sha256:b2c689d54e1144bbcfd191b0832980a21c2dbcf7b5ff7a66248a60c90e951eb8",
+                "sha256:d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"
+            ],
+            "version": "==3.6.4"
         },
         "wcwidth": {
             "hashes": [

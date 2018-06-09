@@ -16,6 +16,8 @@ numpy = "*"
 scipy = "*"
 sklearn = "*"
 annoy = "*"
+jupyterlab = "*"
+altair = "*"
 
 [dev-packages]
 
