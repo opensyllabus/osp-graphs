@@ -18,6 +18,9 @@ sklearn = "*"
 annoy = "*"
 jupyterlab = "*"
 altair = "*"
+titlecase = "*"
+umap = "*"
+umap-learn = "*"
 
 [dev-packages]
 
